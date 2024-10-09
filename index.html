@@ -463,7 +463,7 @@
         height: 100vw;
         overflow-x: hidden;
         position: absolute;
-        top: 100%;
+        top:  100%;
         
         left: 0;
       }
@@ -503,7 +503,7 @@
             <button id="reg" type="button" class="toggle-btn" onclick="register()">Register</button>
           </div>
           <div class="social-icons">
-            <a class="icon-link" href="#" onclick="showPopup('ideal')">
+            <a class="icon-link" href="#" onclick="openIdealHtml()">
               <img src="touxiang1.png" alt="Ideal_2YJ">
               <div class="tooltip">Ideal_2YJ</div>
             </a>
@@ -735,6 +735,10 @@
     window.addEventListener('load', handleOrientation);
     window.addEventListener('orientationchange', handleOrientation);
     window.addEventListener('resize', handleOrientation);
+
+    function openIdealHtml() {
+      window.location.href = 'ideal/Ideal.html';
+    }
   </script>
 </body>
 </html>
