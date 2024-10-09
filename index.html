@@ -463,9 +463,10 @@
         height: 100vw;
         overflow-x: hidden;
         position: absolute;
-        top:  100%;
+        top: 100%;
         
         left: 0;
+      
       }
 
       .container {
@@ -503,15 +504,15 @@
             <button id="reg" type="button" class="toggle-btn" onclick="register()">Register</button>
           </div>
           <div class="social-icons">
-            <a class="icon-link" href="#" onclick="openIdealHtml()">
+            <a class="icon-link" href="#" onclick="openNewTab('ideal/Ideal.html')">
               <img src="touxiang1.png" alt="Ideal_2YJ">
               <div class="tooltip">Ideal_2YJ</div>
             </a>
-            <a class="icon-link" href="#" onclick="showPopup('suzuya')">
+            <a class="icon-link" href="#" onclick="openNewTab('shenzaodejiaqi/shenzaojiang.html')">
               <img src="touxiang2.png" alt="什造酱的假期">
               <div class="tooltip">什造酱的假期</div>
             </a>
-            <a class="icon-link" href="#" onclick="showPopup('caidan')">
+            <a class="icon-link" href="#" onclick="openNewTab('caidan/caidan.html')">
               <img src="caidan.png" alt="彩蛋">
               <div class="tooltip">彩蛋</div>
             </a>
@@ -649,7 +650,7 @@
         backgroundMusic.pause();
 
         setTimeout(() => {
-          window.location.href = "https://baichadream.github.io/zhenggu/";
+          window.location.href = "shenzaodejiaqi/shenzaojiang.html";
         }, 5000);
       } else {
         alert("用户名或密码错误!");
@@ -736,8 +737,8 @@
     window.addEventListener('orientationchange', handleOrientation);
     window.addEventListener('resize', handleOrientation);
 
-    function openIdealHtml() {
-      window.location.href = 'ideal/Ideal.html';
+    function openNewTab(url) {
+      window.open(url, '_blank');
     }
   </script>
 </body>
